@@ -1,1 +1,2 @@
-
+# Wizard
+Group exercise
