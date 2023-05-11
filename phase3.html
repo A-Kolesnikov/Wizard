@@ -6,34 +6,46 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Wizard Phase 3</title>
       <link rel="stylesheet" href="css/styles.css">
-      <link rel="icon" href="css/img/wizard.png">
-    </head>
+      <link rel="icon" href="wizard.png">
+   </head>
    <body>
       <div class="conteiner">
-         <h1>PAGE 3</h1>
+         <div id="head-cont">
+            <div class="wizard-img">
+               <img src="wizard.png" alt="Empty">
+            </div>
+            <h1>Phase Three</h1>
+            <h2 id="day">-------------------------11-05-2023-------------------------</h2>
+         </div>
          <div class="right-box">
-            <div class="nav-bar">
-               <nav>
-                  <button id="back-page2" class="back-page" onclick="window.location.href='phase2.html'">Back Page</button>
-                  <button id="back-page2" class="back-page" onclick="window.location.href='summary.html'">Next Page</button>
-               </nav>
+            <div class="user-form">
+               <label for="image">Image:</label>
+               <input type="file" id="imagen" name="image" required>
+               <br>
+               <label for="hobbie"> Select your hobbie:</label>
+               <select id="hobbie" name="hobbie">
+                  <option value="chess">Chess</option>
+                  <option value="movies">Movies</option>
+                  <option value="dolls">Dolls</option>
+                  <option value="cars">Cars</option>
+                  <option value="sport">Sport</option>
+                  </select>
+                  <option value="hobbies"></option>
+                  <input type="submit" value="Submit" id="submit">
             </div>
          </div>
          <div class="left-box">
-            <label for="image">Image:</label>
-            <input type="file" id="image" name="image" required>
-            <br>
-            <label for="hobbie"> Select your hobbie:</label>
-            <select id="hobbie" name="hobbie">
-                <option value="chess">Chess</option>
-                <option value="movies">Movies</option>
-                <option value="sport">Sport</option>
-                <option value="cars">Cars</option>
-                <option value="dolls">Dolls</option>
-            </select>
-            <option value="hobbies"></option>
-            <input type="submit" value="Submit">
+            
+            <div class="nav-bar">
+               <nav>
+                  <button id="back-page2" class="back-page" onclick="window.location.href='phase2.html'"">Back Page</button>
+                  <button id="back-page2" class="back-page" onclick="window.location.href='summary.html'"">Next Page</button>
+               </nav>
+            </div>
          </div>
       </div>
+
+      <script src="valid.js"></script>
+      <script src="phase3.js"></script>
    </body>
 </html>
