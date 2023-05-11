@@ -1,33 +1,35 @@
 const storage = localStorage
+const parameters ={ //default values of user parameters
+    fullName: null,
+    email: null,
+    birthDate: null,
+    city: null,
+    street: null,
+    number: null,
+    image: null,
+    hobbies: null,
+    allowedPage: 1
+}
 
-function initStorage(){
-    //Create all parameters of user in local storage, 
-    const parameters ={
-        fullName: null,
-        email: null,
-        birthDate: null,
-        city: null,
-        street: null,
-        number: null,
-        image: null,
-        hobbies: null,
-        allowedPage: 1
-    }
+
+function initStorage(){ //Create all user parameters with default value in local storage if they don`t exist
     for (element in parameters){
         if (storage.getItem(element) == null){
-            storage.setItem(element, JSON.stringify(parameters[element]))
+            storage.setItem(element, JSON.stringify(parameters[element]));
         }
     }
 }
 
-//Give to the function name of variable, as a string(in quotes)
-function readStorage(elName){
+function clearStorage(){ //Delete all user parameters from local storage
+    for (element in parameters){
+        storage.removeItem(element);
+    }
+}
+
+function readStorage(elName){ //Give to this function name of variable, as a string(in quotes)
     return JSON.parse(storage.getItem(elName))
 }
 
-//Give to the function name of variable, as a string(in quotes)
-function writeStorage(elName){
+function writeStorage(elName){ //Give to this function name of variable, as a string(in quotes)
     storage.setItem(elName, JSON.stringify(eval(elName)))
 }
-
-initStorage()
