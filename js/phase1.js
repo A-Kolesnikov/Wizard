@@ -8,6 +8,8 @@ fieldName.value = readStorage("fullName");
 fieldMail.value = readStorage("email");
 fieldBirth.value = readStorage("birthDate");
 
+initStorage();
+
 //variables to interact with validation and local storage
 let fullName = null;
 let email = null;
