@@ -6,11 +6,17 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Wizard Phase 1</title>
       <link rel="stylesheet" href="css/styles.css">
-      <link rel="icon" href="css/img/wizard.png">
+      <link rel="icon" href="wizard.png">
    </head>
    <body>
       <div class="container">
-         <h1>PAGE 1</h1>
+         <div id="head-cont">
+            <div class="wizard-img">
+               <img src="wizard.png" alt="Empty">
+            </div>
+         <h1>Phase One</h1>
+         <h2 id="day">-------------------------11-05-2023-------------------------</h2>
+      </div>
          <div class="left-box">
             <div class="form-container">
                <form id="user-form">
@@ -23,19 +29,19 @@
                   <label for="birthdate">Birth Date:</label>
                   <input type="date" id="birthDate" name="birthdate" required>
                   <br>
-                  <input type="submit" value="Submit">
+                  <input type="submit" value="Submit" id="submit">
                </form>
             </div>
          </div>
          <div class="right-box">
             <div class="nav-bar">
                <nav>
-                  <button id="next-page" class="next-page" onclick="window.location.href='phase2.html'">Next Page</button>
+                  <button id="next-page" class="next-page" onclick="window.location.href='phase2.html'"">Next Page</button>
                </nav>
             </div>
          </div>
       </div>
-
+      
     <script src="valid.js"></script>
     <script src="phase1.js"></script>
    </body>
