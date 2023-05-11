@@ -9,28 +9,40 @@
       <link rel="icon" href="wizard.png">
    </head>
    <body>
-      <div class="conteiner">
-         <h1>PAGE 2</h1>
+      <div class="container">
+         <div id="head-cont">
+            <div class="wizard-img">
+               <img src="wizard.png" alt="Empty">
+            </div>
+            <h1>Phase Two</h1>
+            <h2 id="day">-------------------------11-05-2023-------------------------</h2>
+         </div>
          <div class="right-box">
-            <div class="nav-bar">
-               <nav>
-                  <button id="back-page" class="back-page" onclick="window.location.href='phase1.html'">Back Page</button>
-                  <button id="next-page2" class="next-page" onclick="window.location.href='phase3.html'">Next Page</button>
-               </nav>
+            <div class="user-form">
+               <label for="city">City:</label>
+               <input type="text" id="city" name="city" required>
+               <br>
+               <label for="email">Street:</label>
+               <input type="text" id="street" name="street" required>
+               <br>
+               <label for="number">Number :</label>
+               <input type="text" id="number" name="number" >
+               <br>
+               <input type="submit" value="Submit" id="submit">
             </div>
          </div>
+      
          <div class="left-box">
-            <label for="city">City:</label>
-            <input type="text" id="city" name="city" required>
-            <br>
-            <label for="email">Street:</label>
-            <input type="text" id="street" name="street" required>
-            <br>
-            <label for="number">Number :</label>
-            <input type="text" id="number" name="number" >
-            <br>
-            <input type="submit" value="Submit">
+            <div class="nav-bar">
+                <nav>
+                   <button id="back-page" class="back-page" onclick="window.location.href='phase1.html'">Back Page</button>
+                   <button id="next-page2" class="next-page" onclick="window.location.href='phase3.html'">Next Page</button>
+                </nav>
+             </div>
          </div>
       </div>
+
+      <script src="valid.js"></script>
+      <script src="phase2.js"></script>
    </body>
 </html>
