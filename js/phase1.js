@@ -21,15 +21,12 @@ forma.addEventListener("submit", function(evnt){
     let cnt = 0;
     if (nameVal(fullName)){
         writeStorage("fullName");
-        cnt++;
     }
     if (emailVal(email)){
         writeStorage("email");
-        cnt++;
     }
     if (birthVal(birthDate)){
         writeStorage("birthDate");
-        cnt++;
     }
     accessTo2();
 })
