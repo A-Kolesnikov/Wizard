@@ -43,3 +43,9 @@ function accessToSum(){//called when finishing phase 3
         return false;
     }
 }
+
+function protectContent(){
+    if (readStorage("allowedPage") < currentPage){
+        document.querySelector("body").innerHTML='<h1>Error 403 Forbidden Access'; //add button "Previous page"
+    }
+}
