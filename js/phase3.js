@@ -1,12 +1,12 @@
-const currentPage = 2;
+const currentPage = 3;
 
-const fielImage = document.querySelector("#image");
+const fieldImage = document.querySelector("#image");
 const fieldHobbie = document.querySelector("#hobbie");
 const forma = document.querySelector("form"); //CHANGE ID IN HTML! Change structure from div to form!!!
 
 //fill fields of the form with stored values
 fieldImage.value = readStorage("image");
-fieldStreet.value = readStorage("hobbie");
+fieldHobbie.value = readStorage("hobbie");
 
 protectContent();
 
