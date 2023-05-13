@@ -28,6 +28,6 @@ forma.addEventListener("submit", function(evnt){
     if (streetVal(street)){
         writeStorage("street")
     }
-    writrStorage("number")
+    writeStorage("number")
     accessTo3()
 })
