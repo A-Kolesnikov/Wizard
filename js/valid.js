@@ -65,7 +65,8 @@ function imageVal(image) {
         new URL(imageInput)
     } catch (_) {
         alert('Please enter a valid URL!')
-        return
+        return 
     }
+    return true;
 }
 
