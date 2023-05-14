@@ -54,7 +54,7 @@ function streetVal(street) {
 
 function numberVal(number) {
     let numberInput = number
-    if (cityInput !== '' && cityInput >=1) {
+    if (numberInput !== '' && numberInput >=1) {
         return true
     }
 }

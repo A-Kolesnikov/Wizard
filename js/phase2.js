@@ -6,9 +6,9 @@ const fieldNumber = document.querySelector("#number");
 const forma = document.querySelector("form"); //CHANGE ID IN HTML! Change structure from div to form!!!
 
 //fill fields of the form with stored values
-fieldCity.value = readStorage("city");
-fieldStreet.value = readStorage("street");
-fieldNumber.value = readStorage("number");
+fieldCity.value = load("city");
+fieldStreet.value = load("street");
+fieldNumber.value = load("number");
 
 protectContent();
 
@@ -23,11 +23,11 @@ forma.addEventListener("submit", function(evnt){
     street = fieldStreet.value;
     number = fieldNumber.value;
     if (cityVal(city)){
-        writeStorage("city");
+        save("city");
     }
     if (streetVal(street)){
-        writeStorage("street")
+        save("street")
     }
-    writeStorage("number")
+    save("number")
     accessTo3()
 })

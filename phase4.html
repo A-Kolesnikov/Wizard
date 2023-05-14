@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Wizard Phase 4</title>
+      <link rel="stylesheet" href="css/styles.css">
+      <link rel="icon" href="wizard.png">
+   </head>
+   <body>
+      <div class="container">
+         <div id="head-cont">
+            <div class="wizard-img">
+               <img src="wizard.png" alt="Empty">
+            </div>
+            <h1>Phase Four</h1>
+            <h2 id="day">-------------------------11-05-2023-------------------------</h2>
+         </div>
+         <div class="right-box">
+            <div class="form-container">
+               <form id="user-form">
+                  <h3>Are you happy?</h3>
+                  <label for="happyYes">Yes</label>
+                  <input type="radio" id="happyYes" name="happy" value="Happy" required>
+                  <br>
+                  <label for="happyNo">No</label>
+                  <input type="radio" id="happyYes" name="happy" value="Unhappy" required>
+                  <br>
+                  <h3>Will you do skydiving?</h3>
+                  <label for="skyDiveYes">Yes</label>
+                  <input type="radio" id="skyDiveYes" name="skyDive" value="Will do skydiving" required>
+                  <br>
+                  <label for="skyDiveMaybe">Maybe</label>
+                  <input type="radio" id="skyDiveMaybe" name="skyDive" value="Will do skydiving... perhaps" required>
+                  <br>
+                  <label for="skyDiveNo">No</label>
+                  <input type="radio" id="skyDiveNo" name="skyDive" value="Won`t do skydiving" required>
+                  <br>
+                  <h3>Do you have $1 in you pocket now?</h3>
+                  <label for="richYes">Yes</label>
+                  <input type="radio" id="richYes" name="rich" value="Wealthy person" required>
+                  <br>
+                  <label for="richNo">No</label>
+                  <input type="radio" id="richNo" name="rich" value="Flat-broke" required>
+                  <br>
+                  <input type="submit" value="Submit" id="submit">
+               </form>
+            </div>
+         </div>
+      
+         <div class="left-box">
+               <div class="nav-bar">
+                  <nav>
+                     <button id="back-page" class="back-page" onclick="window.location.href='phase3.html'">Previous stage</button>
+                     <button id="next-page2" class="next-page" onclick="window.location.href='summary.html'">Next Stage</button>
+                  </nav>
+               </div>
+         </div>
+      </div>
+
+      <script src="js/storage.js"></script>
+      <script src="js/protectAccess.js"></script>
+      <script src="js/valid.js"></script>
+      <script src="js/phase4.js"></script>
+   </body>
+</html>
