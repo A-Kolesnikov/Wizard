@@ -11,7 +11,7 @@
 <body>
     <h2>Wizard Information</h2>
 
-    <p id="fullname"></p>
+    <p id="fullName"></p>
     <p id="email"></p>
     <p id="birthDate"></p>
     <p id="city"></p>
@@ -21,8 +21,11 @@
     <img id="image" width="200" height="200">
 
     <button id="back-page3" class="back-page" onclick="window.location.href='phase3.html'">Back Page</button>
-    <button id="resetButton" class="reset" onclick="resetLocalStorage()">Reset</button>
+    <button id="resetButton" class="reset" onclick="clearStorage()">Reset</button>
 
-    <script src="sum.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/protectAccess.js"></script>
+    <script src="js/valid.js"></script>
+    <script src="js/sum.js"></script>
 </body>
 </html>
