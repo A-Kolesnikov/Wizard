@@ -21,7 +21,11 @@
             <div class="form-container">
                <form id="user-form">
                   <label for="image">Image:</label>
-                  <input type="file" id="image" name="image" required>
+                  <input type="file" id="image" name="image" onchange = "upload(this);" required>
+                  <br>
+                  <div id="preview">
+                     <!--<img id="prevIMG" alt = "Here would be your photo">-->
+                  </div>
                   <br>
                   <label for="hobbies"> Select your hobby:</label>
                   <select id="hobbies" name="hobbies">
