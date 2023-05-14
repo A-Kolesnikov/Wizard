@@ -17,22 +17,23 @@ let hobbies = null;
 
 forma.addEventListener("submit", function(evnt){
     evnt.preventDefault();
-    image = fieldImage.value;
+    upload(fieldImage); //upload image in BASE64 format to local storage
     hobbies = fieldHobby.value;
 
     /*if (imageVal(image)){
         writeStorage("image");
     }*/
-    writeStorage("image")
-    writeStorage("hobbies")
-    accessToSum()
+    writeStorage("image");
+    writeStorage("hobbies");
+    accessToSum();
 })
 
 function drawImage(){
-    image = readStorage("image")
+    image = readStorage("image");
     if (image){
+        preview.innerHTML = ''
         const prevImage = document.createElement("img");
-        prevImage.setAttribute('src', image)
+        prevImage.setAttribute('src', image);
         preview.appendChild(prevImage);
     }
 }
@@ -44,7 +45,7 @@ function upload(input){
 
     reader.onload = function(){
         image = reader.result;
-        writeStorage("image")
+        writeStorage("image");
         drawImage();
     }
 }
