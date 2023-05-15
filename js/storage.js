@@ -8,9 +8,11 @@ const parameters ={ //default values of user parameters
     number: null,
     image: null,
     hobbies: null,
+    happy: null,
+    skyDive: null,
+    rich: null,
     allowedPage: 1
 }
-
 
 function initStorage(){ //Create all user parameters with default value in local storage if they don`t exist
     for (element in parameters){
@@ -26,10 +28,10 @@ function clearStorage(){ //Delete all user parameters from local storage
     }
 }
 
-function readStorage(elName){ //Give to this function name of variable, as a string(in quotes)
+function load(elName){ //Give to this function name of variable, as a string(in quotes)
     return JSON.parse(storage.getItem(elName))
 }
 
-function writeStorage(elName){ //Give to this function name of variable, as a string(in quotes)
+function save(elName){ //Give to this function name of variable, as a string(in quotes)
     storage.setItem(elName, JSON.stringify(eval(elName)))
 }

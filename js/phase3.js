@@ -7,7 +7,7 @@ const preview = document.querySelector("#preview")
 
 //fill fields of the form with stored values
 fieldImage.value = '';
-fieldHobby.value = readStorage("hobbies");
+fieldHobby.value = load("hobbies");
 
 protectContent();
 
@@ -21,19 +21,20 @@ forma.addEventListener("submit", function(evnt){
     hobbies = fieldHobby.value;
 
     /*if (imageVal(image)){
-        writeStorage("image");
+        save("image");
     }*/
-    writeStorage("image");
-    writeStorage("hobbies");
-    accessToSum();
+    save("image");
+    save("hobbies");
+    accessTo4();
 })
 
 function drawImage(){
-    image = readStorage("image");
+    image = load("image");
     if (image){
         preview.innerHTML = ''
         const prevImage = document.createElement("img");
         prevImage.setAttribute('src', image);
+        prevImage.setAttribute('height', "500px")
         preview.appendChild(prevImage);
     }
 }
@@ -45,7 +46,7 @@ function upload(input){
 
     reader.onload = function(){
         image = reader.result;
-        writeStorage("image");
+        save("image");
         drawImage();
     }
 }

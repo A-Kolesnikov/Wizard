@@ -4,9 +4,9 @@ const fieldMail = document.querySelector("#email")
 const fieldBirth = document.querySelector("#birthDate")
 const forma = document.querySelector("form")
 
-fieldName.value = readStorage("fullName");
-fieldMail.value = readStorage("email");
-fieldBirth.value = readStorage("birthDate");
+fieldName.value = load("fullName");
+fieldMail.value = load("email");
+fieldBirth.value = load("birthDate");
 
 initStorage();
 
@@ -22,13 +22,13 @@ forma.addEventListener("submit", function(evnt){
     birthDate = fieldBirth.value;
     let cnt = 0;
     if (nameVal(fullName)){
-        writeStorage("fullName");
+        save("fullName");
     }
     if (emailVal(email)){
-        writeStorage("email");
+        save("email");
     }
     if (birthVal(birthDate)){
-        writeStorage("birthDate");
+        save("birthDate");
     }
     accessTo2();
 })
