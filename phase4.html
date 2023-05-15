@@ -6,43 +6,42 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Wizard Phase 4</title>
       <link rel="stylesheet" href="css/styles.css">
-      <link rel="icon" href="wizard.png">
+      <link rel="icon" href="wizard.png" height="80px">
    </head>
    <body>
       <div class="container">
          <div id="head-cont">
             <div class="wizard-img">
-               <img src="wizard.png" alt="Empty">
+               <img src="wizard.png" alt="Empty" height="80px">
             </div>
             <h1>Phase Four</h1>
-            <h2 id="day">-------------------------11-05-2023-------------------------</h2>
          </div>
          <div class="right-box">
             <div class="form-container">
                <form id="user-form">
                   <h3>Are you happy?</h3>
                   <label for="happyYes">Yes</label>
-                  <input type="radio" id="happyYes" name="happy" value="Happy" required>
+                  <input type="radio" id="happyYes" name="happy" value="Happy" class="RB" required>
                   <br>
                   <label for="happyNo">No</label>
-                  <input type="radio" id="happyYes" name="happy" value="Unhappy" required>
+                  <input type="radio" id="happyNo" name="happy" value="Unhappy" class="RB" required>
                   <br>
                   <h3>Will you do skydiving?</h3>
                   <label for="skyDiveYes">Yes</label>
-                  <input type="radio" id="skyDiveYes" name="skyDive" value="Will do skydiving" required>
+                  <input type="radio" id="skyDiveYes" name="skyDive" value="Will do skydiving" class="RB" required>
                   <br>
                   <label for="skyDiveMaybe">Maybe</label>
-                  <input type="radio" id="skyDiveMaybe" name="skyDive" value="Will do skydiving... perhaps" required>
+                  <input type="radio" id="skyDiveMaybe" name="skyDive" value="Will do skydiving... perhaps" class="RB" required>
                   <br>
                   <label for="skyDiveNo">No</label>
-                  <input type="radio" id="skyDiveNo" name="skyDive" value="Won`t do skydiving" required>
+                  <input type="radio" id="skyDiveNo" name="skyDive" value="Won`t do skydiving" class="RB" required>
                   <br>
                   <h3>Do you have $1 in you pocket now?</h3>
                   <label for="richYes">Yes</label>
-                  <input type="radio" id="richYes" name="rich" value="Wealthy person" required>
+                  <input type="radio" id="richYes" name="rich" value="Wealthy person" class="RB" required>
                   <br>
                   <label for="richNo">No</label>
-                  <input type="radio" id="richNo" name="rich" value="Flat-broke" required>
+                  <input type="radio" id="richNo" name="rich" value="Flat-broke" class="RB" required>
                   <br>
                   <input type="submit" value="Submit" id="submit">
                </form>
@@ -52,7 +51,7 @@
          <div class="left-box">
                <div class="nav-bar">
                   <nav>
-                     <button id="back-page" class="back-page" onclick="window.location.href='phase3.html'">Previous stage</button>
+                     <button id="back-page" class="back-page" onclick="window.location.href='phase3.html'">Previous Stage</button>
                      <button id="next-page2" class="next-page" onclick="window.location.href='summary.html'">Next Stage</button>
                   </nav>
                </div>

@@ -61,6 +61,6 @@ function accessToSum(){//called when finishing phase 4
 
 function protectContent(){
     if (load("allowedPage") < currentPage){
-        document.querySelector("body").innerHTML='<h1>Error 403 Forbidden Access'; //add button "Previous page"
+        document.querySelector("#user-form").innerHTML='<h1>Please, fill previous forms first.'; //add button "Previous page"
     }
 }

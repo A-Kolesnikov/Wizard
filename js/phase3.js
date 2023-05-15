@@ -34,6 +34,7 @@ function drawImage(){
         preview.innerHTML = ''
         const prevImage = document.createElement("img");
         prevImage.setAttribute('src', image);
+        prevImage.setAttribute('height', "500px")
         preview.appendChild(prevImage);
     }
 }

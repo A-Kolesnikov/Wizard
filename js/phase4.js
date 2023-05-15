@@ -1,14 +1,29 @@
 const currentPage = 4;
 
-/*const fieldHappy = document.querySelectorAll("#city");
-const fieldStreet = document.querySelector("#street");
-const fieldNumber = document.querySelector("#number");*/
-const forma = document.querySelector("form"); //CHANGE ID IN HTML! Change structure from div to form!!!
+const forma = document.querySelector("form");
+const radHappy = document.querySelectorAll('input[name = "happy"]')
+const radSkyDive = document.querySelectorAll('input[name = "skyDive"]')
+const radRich = document.querySelectorAll('input[name = "rich"]')
 
 //fill fields of the form with stored values
-/*fieldCity.value = readStorage("city");
-fieldStreet.value = readStorage("street");
-fieldNumber.value = readStorage("number");*/
+for (element of radHappy){
+    let happy = load("happy");
+    if (element.value == happy){
+        element.checked = true;
+    }
+}
+for (element of radSkyDive){
+    let skyDive = load("skyDive");
+    if (element.value == skyDive){
+        element.checked = true;
+    }
+}
+for (element of radRich){
+    let rich = load("rich");
+    if (element.value == rich){
+        element.checked = true;
+    }
+}
 
 protectContent();
 
