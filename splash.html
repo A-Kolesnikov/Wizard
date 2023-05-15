@@ -4,27 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wizard Home page</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Wizard Start page</title>
+    <link rel="stylesheet" href="css/newStyles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="mini-container">
-            <h1>Welcome to the Wizard!</h1>
-            <p class="description">
-            Our wizard will guide you through the process of providing some necessary information. Click proceed to start.
-            </p>
+    <div class="page">
+        <header class="header"><h2>New User Registration</h2></header>
 
-            <button id="toPhase1" class="next-page" onclick="window.location.href='phase1.html'">Next Page</button>
-        </div>
-        <div class="div-footer">
+        <main class="content">
+            <div class="infoContainer">
+                <h1>Let`s register your account!</h1>
+                    <p>We`ll ask you several questions. Click start to begin.</p>
+            </div>
+            <div class="nav-bar">
+                    <button id="toPhase1" class="next-page" onclick="window.location.href='phase1.html'">Start</button>
+            </div>
 
-        
-        <footer>
-            &copy; 2023 Wizard. All rights reserved.
-        </footer>
-        </div>
+        </main>
+
+        <footer class="footer"><p>Brightcode inc &copy 2023</p></footer>
     </div>
-    <script src="sum.js"></script>
 </body>
 </html>
