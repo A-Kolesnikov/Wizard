@@ -13,3 +13,9 @@ document.getElementById('happy').innerHTML = load("happy");
 document.getElementById('skyDive').innerHTML = load("skyDive");
 document.getElementById('rich').innerHTML = load("rich");
 document.getElementById('image').src = load("image");
+
+function reset(){
+    clearStorage()
+    initStorage()
+    window.location.href='splash.html'
+}

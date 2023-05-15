@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page{
+    /*overflow:hidden;*/ /*no sidescrolling*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /*stick footer to the bottom of the screen*/
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+}
+
+.header, 
+.footer {
+    padding: 20px;
+    background-color: rgb(180, 199, 218);
+}
+
+.footer {
+    margin-top: auto; /*stick footer to the bottom of the screen*/
+}
+
+.content{
+    margin: 0 auto; /*put block in center of screen*/
+    
+
+}
+
+.inRow{
+    display: flex;
+    flex-direction: row;
+}
+.inColumn{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    font-size: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    margin-top: 10px;
+    background-color: #3a80cf;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #5a88b1;
+}
